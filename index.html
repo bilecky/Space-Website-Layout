@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@300;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <div class="container" onclick="this.classList.toggle('active')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="95" height="95" viewBox="0 0 200 200">
+            <g stroke-width="6.5" stroke-linecap="round">
+                <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" />
+                <path d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554" fill="none" />
+                <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" />
+                <path d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554" fill="none" />
+                <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" />
+                <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" />
+            </g>
+        </svg>
+    </div>
+    <nav class="navigation">
+        <div class="navigation__items">
+            <a class="navigation__item" href="#about">About us</a>
+            <a class="navigation__item" href="#planets">Planets</a>
+            <a class="navigation__item" href="#plans">Our plans</a>
+            <a class="navigation__item" href="#contact">Contact Us</a>
+        </div>
+    </nav>
+    <header class="header section">
+
+
+        <h1 class="header__heading">Egzo<span>Planets</span></h1>
+        <p class="header__text">You will see that the future is closer than you think</p>
+        <div class="bg-video">
+            <div class="bg-video__shadow"></div>
+            <video autoplay muted loop class="bg-video__content">
+                <source type="video/mp4" src="./img/header_video_smaller.mp4">
+            </video>
+        </div>
+        <a href="#planets" class="header__btn btn-animation">Show more</a>
+    </header>
+    <script src="./js/script.js"></script>
+</body>
+</html>
