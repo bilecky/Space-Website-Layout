@@ -1,0 +1,39 @@
+.section__header {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 5rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	color: $secondary-color;
+	letter-spacing: 1.5px;
+	&--underline-left {
+		width: 2rem;
+		height: 2px;
+		background-color: $secondary-color;
+        margin-right: 1rem;
+        margin-bottom: 0;
+
+	}
+    &--underline-right {
+		width: 2rem;
+		height: 2px;
+		background-color: $secondary-color;
+        margin-left: 1rem;
+        margin-bottom: 0;
+	}
+}
+.section-padding {
+	padding: 4rem 1.5rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.p-margin {
+    margin-bottom: 3rem;
+}

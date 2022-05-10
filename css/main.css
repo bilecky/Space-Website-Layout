@@ -1,20 +1,50 @@
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.section__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #843ad9ea;
+  letter-spacing: 1.5px;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+.section__header--underline-left {
+  width: 2rem;
+  height: 2px;
+  background-color: #843ad9ea;
+  margin-right: 1rem;
+  margin-bottom: 0;
 }
 
-body {
-  font-family: 'roboto';
-  font-size: 1.6rem;
+.section__header--underline-right {
+  width: 2rem;
+  height: 2px;
+  background-color: #843ad9ea;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.section-padding {
+  padding: 4rem 1.5rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.p-margin {
+  margin-bottom: 3rem;
 }
 
 .navigation {
@@ -96,6 +126,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -128,8 +159,52 @@ body {
   font-weight: 700;
 }
 
+.header__text {
+  color: #d8d8d8;
+}
+
+.header__btn {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  background: #d8d8d8;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 1.2rem 2.4rem;
+}
+
+.about__img {
+  width: 100%;
+  margin-bottom: 3rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.gallery__box {
+  display: none;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 200vh;
+  font-family: 'roboto';
+  font-size: 1.6rem;
+}
+
+body {
+  height: 400vh;
 }
 
 .bg-video {
