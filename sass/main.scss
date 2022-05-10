@@ -1,8 +1,8 @@
 $main-gradient: linear-gradient(
 	90deg,
-	rgba(216, 27, 222, 1) 0%,
-	rgba(177, 54, 184, 1) 27%,
-	rgba(14, 0, 255, 1) 100%
+	rgb(144, 4, 149) 0%,
+	rgb(75, 11, 237) 27%,
+	rgb(140, 0, 255) 100%
 );
 
 $background-shadow: #30144fea;
@@ -10,12 +10,16 @@ $process-card-bgc: rgb(38, 38, 38);
 
 $primary-color: #d9d9d9;
 $secondary-color: #843ad9ea;
+$contact-bgc-color: #e6e6e6ea;
+$contact-form-label-color: #212121ea;
+
 
 @import './components';
 @import './navigation';
 @import './header';
 @import './about-section';
 @import './process-section';
+@import './contact';
 
 //reset
 *,
@@ -25,6 +29,8 @@ $secondary-color: #843ad9ea;
 	margin: 0;
 	padding: 0;
 }
+
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;

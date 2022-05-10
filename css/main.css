@@ -19,7 +19,7 @@
 
 .section__header--underline-left {
   width: 2rem;
-  height: 2px;
+  height: 3px;
   background-color: #843ad9ea;
   margin-right: 1rem;
   margin-bottom: 0;
@@ -27,7 +27,7 @@
 
 .section__header--underline-right {
   width: 2rem;
-  height: 2px;
+  height: 3px;
   background-color: #843ad9ea;
   margin-left: 1rem;
   margin-bottom: 0;
@@ -51,8 +51,8 @@
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d81bde), color-stop(27%, #b136b8), to(#0e00ff));
-  background-image: linear-gradient(90deg, #d81bde 0%, #b136b8 27%, #0e00ff 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#900495), color-stop(27%, #4b0bed), to(#8c00ff));
+  background-image: linear-gradient(90deg, #900495 0%, #4b0bed 27%, #8c00ff 100%);
   z-index: 220;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,8 +152,8 @@
 }
 
 .header__heading span {
-  background-image: -webkit-gradient(linear, left top, right top, from(#d81bde), color-stop(27%, #b136b8), to(#0e00ff));
-  background-image: linear-gradient(90deg, #d81bde 0%, #b136b8 27%, #0e00ff 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#900495), color-stop(27%, #4b0bed), to(#8c00ff));
+  background-image: linear-gradient(90deg, #900495 0%, #4b0bed 27%, #8c00ff 100%);
   color: transparent;
   -webkit-background-clip: text;
   font-weight: 700;
@@ -161,16 +161,6 @@
 
 .header__text {
   color: #d9d9d9;
-}
-
-.header__btn {
-  margin-top: 3rem;
-  font-size: 1.4rem;
-  background: #d9d9d9;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 10px;
-  padding: 1.2rem 2.4rem;
 }
 
 .about__box h3 {
@@ -321,6 +311,83 @@
     margin: 1rem;
     width: 45%;
   }
+}
+
+.universal__btn {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  background: #d9d9d9;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 1.2rem 2.4rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contact {
+  position: relative;
+  background-color: #e6e6e6ea;
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+          clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  color: #d9d9d9;
+  height: 100rem;
+}
+
+.contact__form, .contact__form-labels {
+  color: #212121ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form-label {
+  margin-bottom: 0.8rem;
+}
+
+.contact__form-input {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contact__form-textarea {
+  min-height: 120px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contact__form-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-image: -webkit-gradient(linear, left top, right top, from(#900495), color-stop(27%, #4b0bed), to(#8c00ff));
+  background-image: linear-gradient(90deg, #900495 0%, #4b0bed 27%, #8c00ff 100%);
+  color: #d9d9d9;
+  width: 100%;
+  border: none;
+  max-width: 25rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
 }
 
 *,

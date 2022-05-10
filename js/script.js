@@ -13,6 +13,6 @@ const navHandler = () => {
 }
 
 hamburgerBtn.addEventListener('click', navHandler)
-// AOS.init();
+AOS.init();
 Cocoen.create(document.querySelector('.cocoen'));
 

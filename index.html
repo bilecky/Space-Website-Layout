@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Egzo Planet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@300;500;600;700&display=swap"
@@ -44,18 +44,18 @@
 
 
         <h1 data-aos="zoom-out" data-aos-delay="50" data-aos-duration="1500" class="header__heading">Egzo<span>Planets</span></h1>
-        <!-- <p data-aos="zoom-out" data-aos-delay="400"
-        data-aos-duration="1500" class="header__text">You'll see that the future is closer than you think</p> -->
+        <p data-aos="zoom-out" data-aos-delay="400"
+        data-aos-duration="1500" class="header__text">You'll see that the future is closer than you think</p>
         <div class="bg-video">
             <div class="bg-video__shadow"></div>
             <video stop muted loop class="bg-video__content">
                 <source type="video/mp4" src="./img/header_video_smaller.mp4">
             </video>
         </div>
-        <a data-aos="zoom-out" data-aos-delay="2000" data-aos-duration="2000" href="#planets" class="header__btn btn-animation">Show more</a>
+        <a data-aos="zoom-out" data-aos-delay="2000" data-aos-duration="2000" href="#planets" class="universal__btn btn-animation">Show more</a>
     </header>
     <main class="main">
-        <section id="about" class="about section-padding">
+        <section id="about" class="about section-padding section-white">
             <div class="wrapper">
                 <div class="section__header">
                     <div class="section__header section__header--underline-left"></div>
@@ -137,18 +137,19 @@
             </div>
 
         </section>
-        <section class="before-after section-padding">
+        <section class="before-after section-padding section-white">
             <div class="wrapper">
                 <div class="section__header">
                     <div class="section__header section__header--underline-left"></div>
-                    <h2>Our utilization</h2>
+                    <h2>utilization</h2>
                     <div class="section__header section__header--underline-right"></div>
                 </div>
                 <div class="before-after__box">
                     <p class="p-margin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio exercitationem architecto consequuntur error
                         nobis temporibus dolor dolorem voluptate itaque omnis placeat iusto, tempore fugiat debitis nostrum beatae fuga expedita
                         dolores.</p>
-                        <p class="p-margin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur sit perspiciatis eveniet quia quae a veritatis, porro error necessitatibus deleniti. Soluta totam tenetur sunt.</p>
+                    <p class="p-margin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur sit perspiciatis eveniet quia quae a
+                        veritatis, porro error necessitatibus deleniti. Soluta totam tenetur sunt.</p>
                     <div class="cocoen">
                         <img src="img/gallery-img-1.jpg" alt="" />
                         <img src="img/gallery-img-2.jpg" alt="" />
@@ -157,7 +158,26 @@
 
             </div>
         </section>
-
+        <section class="contact section-padding">
+            <div class="section__header">
+                <div class="section__header section__header--underline-left"></div>
+                <h2>Contact</h2>
+                <div class="section__header section__header--underline-right"></div>
+            </div>
+            <div class="wrapper">
+                <form action="" class="contact__form">
+                    <div class="contact__form-labels">
+                        <label for="name" class="contact__form-label">Name and Surname</label>
+                        <input id="name" type="text" class="contact__form-input">
+                        <label for="email" class="contact__form-label">Email address:</label>
+                        <input id=" name" type="text" class="contact__form-input">
+                    </div>
+                    <label for="message" class="contact__form-label">Message:</label>
+                    <textarea id="message" class="contact__form-textarea"></textarea>
+                    <button type="submit" class="contact__form-btn universal__btn">Send</button>
+                </form>
+            </div>
+        </section>
 
     </main>
     <script src="https://unpkg.com/cocoen/dist/cocoen.js"></script>
