@@ -16,15 +16,13 @@
 		font-family: 'Space Grotesk', sans-serif;
 		font-weight: 500;
 		color: white;
-		span {
-			background-image: $main-gradient;
-			color: transparent;
-			-webkit-background-clip: text;
-			font-weight: 700;
-		}
 	}
 	&__text {
 		color: $primary-color;
 	}
-	
+	&__wrapper-box {
+		.logo {
+			display: none;
+		}
+	}
 }

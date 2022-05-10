@@ -2,11 +2,19 @@
 	margin-top: 3rem;
 	font-size: 1.4rem;
 	background: $primary-color;
+	color: $secondary-color;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-radius: 10px;
 	padding: 1.2rem 2.4rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	letter-spacing: 0.2rem;
+	font-weight: 500;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	transform: translateY(0);
+	transition: transform 0.3s;
+	&:hover {
+		transform: scale(1.1) translateY(-5rem);
+	}
 }
 @mixin contactInputs {
 	margin-bottom: 1rem;
@@ -14,7 +22,7 @@
 	border: none;
 	border-radius: 10px;
 	font-size: 1.7rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .contact {
@@ -49,15 +57,12 @@
 	&__form-btn {
 		align-self: flex-end;
 		background-image: $main-gradient;
-color: $primary-color;
-        width: 100%;
-        border: none;
-        max-width: 25rem;
-        font-weight: 600;
-        letter-spacing: 0.2rem;
-        cursor: pointer;
-&:hover {
-
-}
+		color: $primary-color;
+		width: 100%;
+		border: none;
+		max-width: 25rem;
+		font-weight: 600;
+		letter-spacing: 0.2rem;
+		cursor: pointer;
 	}
 }

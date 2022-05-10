@@ -20,6 +20,9 @@ $contact-form-label-color: #212121ea;
 @import './about-section';
 @import './process-section';
 @import './contact';
+@import 'hamburger-btn';
+
+@import './media-queries';
 
 //reset
 *,
@@ -69,4 +72,5 @@ body {
 	}
 }
 
-@import 'hamburger-btn';
+
+

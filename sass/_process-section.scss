@@ -27,7 +27,7 @@
 		margin: 3rem 0;
 		padding: 2rem 4rem;
 		background: $process-card-bgc;
-
+		height: 30rem;
 		display: flex;
 
 		flex-direction: column;
@@ -40,9 +40,9 @@
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 			rgba(0, 0, 0, 0.22) 0px 15px 12px;
 		transition: transform 0.3s;
-        &:last-of-type {
-            margin-bottom: 6rem;
-        }
+		&:last-of-type {
+			margin-bottom: 6rem;
+		}
 		&:hover {
 			transform: scale(0.9);
 		}
@@ -55,19 +55,5 @@
 			font-size: 5rem;
 			font-weight: 600;
 		}
-	}
-}
-
-@media (min-width: 576px) {
-	.process {
-		&__box {
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-		}
-        &__option {
-            margin: 1rem;
-            width: 45%;
-        }
 	}
 }

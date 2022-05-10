@@ -37,3 +37,9 @@
 .p-margin {
     margin-bottom: 3rem;
 }
+.logo__gradient {
+	background-image: $main-gradient;
+	color: transparent;
+	-webkit-background-clip: text;
+	font-weight: 700;
+}
