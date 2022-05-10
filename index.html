@@ -9,6 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@300;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+
+
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -36,15 +43,16 @@
     <header class="header section">
 
 
-        <h1 class="header__heading">Egzo<span>Planets</span></h1>
-        <p class="header__text">You'll see that the future is closer than you think</p>
+        <h1 data-aos="zoom-out" data-aos-delay="50" data-aos-duration="1500" class="header__heading">Egzo<span>Planets</span></h1>
+        <!-- <p data-aos="zoom-out" data-aos-delay="400"
+        data-aos-duration="1500" class="header__text">You'll see that the future is closer than you think</p> -->
         <div class="bg-video">
             <div class="bg-video__shadow"></div>
-            <video autoplay muted loop class="bg-video__content">
+            <video stop muted loop class="bg-video__content">
                 <source type="video/mp4" src="./img/header_video_smaller.mp4">
             </video>
         </div>
-        <a href="#planets" class="header__btn btn-animation">Show more</a>
+        <a data-aos="zoom-out" data-aos-delay="2000" data-aos-duration="2000" href="#planets" class="header__btn btn-animation">Show more</a>
     </header>
     <main class="main">
         <section class="about section-padding">
@@ -60,7 +68,8 @@
                             consequuntur,
                             mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum
                             numquam,
-                            sint optio atque possimus corporis explicabo?</p>
+                            sint optio atque possimus corporis explicabo? mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae, laboriosam
+                            alias maxime, saepe magnam ipsa nostrum</p>
                         <div class="about__box-img">
                             <img src="img/gallery-img-1.jpg" alt="space in night" class="about__img">
                         </div>
@@ -70,6 +79,9 @@
                             numquam,
                             sint optio atque possimus corporis explicabo? Maxime perspiciatis repellat quaerat consequuntur, mollitia dolor corrupti
                             magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum numquam, sint optio</p>
+                        <h3 class="p-margin">Our partnerships </h3>
+
+
                     </div>
                     <div class="gallery__box">
                         <div class="gallery__box-img">
@@ -82,11 +94,54 @@
                             <img src="img/gallery-img-3.jpg" alt="space photo" class="gallery__img">
                         </div>
                     </div>
+                    <ul class="about__list">
+                        <li title="show more" class="about__list-item"><i class="fa-brands fa-google"></i>Google</li>
+                        <li class="about__list-item"><i class="fa-brands fa-facebook"></i>Facebook</li>
+                        <li class="about__list-item"><i class="fa-brands fa-whatsapp"></i>Whatsapp</li>
+                        <li class="about__list-item"><i class="fa-brands fa-weibo"></i>Weibo</li>
+                        <li class="about__list-item"><i class="fa-brands fa-paypal"></i>PayPal</li>
+                        <li class="about__list-item"><i class="fa-brands fa-kickstarter"></i>Kickstarter</li>
+
+
+                    </ul>
                 </div>
 
             </div>
         </section>
+        <section class="process section-padding ">
+
+
+            <div class="section__header">
+                <div class="section__header section__header--underline-left"></div>
+                <h2>Our Process</h2>
+                <div class="section__header section__header--underline-right"></div>
+            </div>
+
+
+            <div class="process__box">
+                <div class="process__option">
+                    <i class="fa-solid fa-1"></i>
+                    <h3 class="process__option-header">Explore World</h3>
+                    <p class="process__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, esse!</p>
+                </div>
+                <div class="process__option">
+                    <i class="fa-solid fa-2"></i>
+                    <h3 class="process__option-header">We de best</h3>
+                    <p class="process__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, esse!</p>
+                </div>
+                <div class="process__option">
+                    <i class="fa-solid fa-3"></i>
+                    <h3 class="process__option-header">Changing the world</h3>
+                    <p class="process__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, esse!</p>
+                </div>
+            </div>
+
+        </section>
+        
+
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./js/script.js"></script>
 </body>
 </html>

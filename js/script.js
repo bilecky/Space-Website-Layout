@@ -7,8 +7,10 @@ const navHandler = () => {
 	navItems.forEach(item => {
 		item.addEventListener('click', () => {
 			navigation.classList.remove('navigation--toggle-nav')
+			hamburgerBtn.classList.remove('active')
 		})
 	})
 }
 
 hamburgerBtn.addEventListener('click', navHandler)
+// AOS.init();
