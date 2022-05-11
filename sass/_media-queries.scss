@@ -1,3 +1,12 @@
+@media (min-width: 410px) {
+	.accordion {
+		&__box {
+			&-label {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
 @media (min-width: 576px) {
 	.process {
 		&__box {
@@ -10,13 +19,24 @@
 			width: 45%;
 		}
 	}
+	.about {
+		&__list {
+			&-item {
+				width: 20rem;
+				font-size: 1.6rem;
+				i {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) {
 	.about {
 		&__list {
 			&-item {
-				width: 20rem;
+				width: 24rem;
 				font-size: 1.6rem;
 				i {
 					font-size: 2rem;
@@ -93,8 +113,7 @@
 						&::after {
 							content: '';
 							height: 1px;
-							transform-origin: bottom right;
-							width: 100%;
+							
 						}
 					}
 				}

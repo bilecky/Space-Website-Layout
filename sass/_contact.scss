@@ -11,13 +11,10 @@
 .contact {
 	position: relative;
 	background-color: $contact-bgc-color;
-	clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+	clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
 
-	background-size: cover;
-	overflow: hidden;
-	background-position: center;
+	
 	color: $primary-color;
-	height: 100rem;
 	&__form,
 	&__form-labels {
 		color: $contact-form-label-color;
@@ -47,5 +44,6 @@
 		font-weight: 600;
 		letter-spacing: 0.2rem;
 		cursor: pointer;
+		
 	}
 }

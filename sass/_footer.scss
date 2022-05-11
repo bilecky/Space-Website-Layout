@@ -1,0 +1,60 @@
+.footer {
+	&__box {
+		position: relative;
+		background-image: $process-bgc, url(/img/footer-small.jpg);
+        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+
+		background-size: cover;
+		overflow: hidden;
+		background-position: center;
+		color: $primary-color;
+		margin-top: -6rem;
+		padding: 11rem 3rem 0 3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&-logo {
+			font-size: 3.5rem;
+			margin-bottom: 5rem;
+
+			a {
+				text-decoration: none;
+
+				color: $primary-color;
+			}
+		}
+		&-navigation {
+			border-top: 1px solid rgba(140, 140, 140, 0.757);
+			height: 20vh;
+			width: 100%;
+			& .navigation {
+				&__item {
+					&::after {
+						content: '';
+						height: 1.5px;
+					}
+				}
+			}
+		}
+	}
+	.navigation__items {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: 1.6rem;
+
+		a {
+			font-size: 1.6rem;
+		}
+	}
+	&__copyright {
+		width: 100%;
+		padding: 1.6rem;
+		border-top: 1px solid rgba(140, 140, 140, 0.757);
+		text-align: center;
+        letter-spacing: 0.5px;
+	}
+}
