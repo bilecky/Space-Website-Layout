@@ -1,7 +1,7 @@
 const navigation = document.querySelector('.navigation')
 const hamburgerBtn = document.querySelector('.container')
 const navItems = document.querySelectorAll('.navigation__item')
-
+//nav handler
 const navHandler = () => {
 	navigation.classList.toggle('navigation--toggle-nav')
 	navItems.forEach(item => {
@@ -14,5 +14,15 @@ const navHandler = () => {
 
 hamburgerBtn.addEventListener('click', navHandler)
 AOS.init();
-Cocoen.create(document.querySelector('.cocoen'));
+
+//accordion
+const accordion = document.querySelectorAll('.accordion__box')
+
+accordion.forEach(item => {
+	item.addEventListener('click', () => {
+		item.classList.toggle('active')
+		console.log(item);
+	})
+})
+
 
