@@ -47,8 +47,26 @@
 }
 
 @media (min-width: 990px) {
+	#map {
+		height: 35rem;
+		width: 50%;
+		margin-left: 1rem;
+	}
+	.contact {
+		&__box {
+			display: flex;
+			align-items: center;
+			margin-bottom: 2rem;
+		}
+		&__form {
+			width: 50%;
+			border-right: 1px solid rgba(0, 0, 0, 0.209);
+			padding-right: 1rem;
+		}
+	}
+
 	.universal__btn {
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 	.process {
 		&__option {
@@ -113,7 +131,6 @@
 						&::after {
 							content: '';
 							height: 1px;
-							
 						}
 					}
 				}

@@ -24,6 +24,14 @@
 		margin-bottom: 0;
 	}
 }
+.section__header {
+	margin-top: 7rem;
+	color: $secondary-color;
+	& div {
+		background-color: $secondary-color;
+		margin-top: 0;
+	}
+}
 .section-padding {
 	padding: 7rem 3rem;
 }

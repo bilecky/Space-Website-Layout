@@ -33,6 +33,16 @@
   margin-bottom: 0;
 }
 
+.section__header {
+  margin-top: 7rem;
+  color: #843ad9ea;
+}
+
+.section__header div {
+  background-color: #843ad9ea;
+  margin-top: 0;
+}
+
 .section-padding {
   padding: 7rem 3rem;
 }
@@ -252,6 +262,10 @@
   display: none;
 }
 
+.about .section__header {
+  margin-top: 0;
+}
+
 .about__box h3 {
   font-weight: 500;
   text-align: center;
@@ -277,7 +291,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 2rem;
+  row-gap: 1rem;
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
 }
@@ -392,6 +406,9 @@
   background-color: #e6e6e6ea;
   -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
           clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
   color: #d9d9d9;
 }
 
@@ -442,7 +459,7 @@
   color: #d9d9d9;
   width: 100%;
   border: none;
-  max-width: 25rem;
+  max-width: 18rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   cursor: pointer;
@@ -537,6 +554,14 @@ path:nth-child(6) {
           transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 
+.faq .section__header {
+  margin-top: 0;
+}
+
+.faq .section__header div {
+  margin-top: 0;
+}
+
 .footer__box {
   position: relative;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(201, 61, 205, 0.711642)), color-stop(0%, rgba(72, 10, 110, 0.808477))), url(/img/footer-small.jpg);
@@ -575,8 +600,7 @@ path:nth-child(6) {
 }
 
 .footer__box-navigation {
-  border-top: 1px solid rgba(140, 140, 140, 0.757);
-  height: 20vh;
+  height: 8vh;
   width: 100%;
 }
 
@@ -596,11 +620,13 @@ path:nth-child(6) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 1.6rem;
+  padding: 1.6rem;
 }
 
 .footer .navigation__items a {
@@ -609,7 +635,7 @@ path:nth-child(6) {
 
 .footer__copyright {
   width: 100%;
-  padding: 1.6rem;
+  padding: 1.6rem 0rem;
   border-top: 1px solid rgba(140, 140, 140, 0.757);
   text-align: center;
   letter-spacing: 0.5px;
@@ -656,8 +682,27 @@ path:nth-child(6) {
 }
 
 @media (min-width: 990px) {
+  #map {
+    height: 35rem;
+    width: 50%;
+    margin-left: 1rem;
+  }
+  .contact__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem;
+  }
+  .contact__form {
+    width: 50%;
+    border-right: 1px solid rgba(0, 0, 0, 0.209);
+    padding-right: 1rem;
+  }
   .universal__btn {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .process__option {
     margin: 2rem;
