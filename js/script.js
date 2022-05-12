@@ -39,11 +39,16 @@ const hamburgerColorHandler = () => {
 				console.log('gowno')
 
 				break
+			case hamburgerBtn.classList.contains('active'):
+				svg.style.stroke = 'white'
+				break
 		}
 	})
 }
 
 window.addEventListener('scroll', hamburgerColorHandler)
+hamburgerBtn.addEventListener('click', hamburgerColorHandler)
+
 
 //accordion
 
