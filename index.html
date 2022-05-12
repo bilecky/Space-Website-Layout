@@ -7,15 +7,15 @@
     <title>Egzo Planet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@300;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@300;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous"
         referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-        crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
 
 
 
@@ -58,7 +58,7 @@
         </p>
         <div class="bg-video">
             <div class="bg-video__shadow"></div>
-            <video stop muted loop class="bg-video__content">
+            <video autoplay muted loop class="bg-video__content">
                 <source type="video/mp4" src="./img/header_video_smaller.mp4">
             </video>
         </div>
@@ -69,56 +69,64 @@
             <div class="wrapper">
                 <div class="section__header">
                     <div class="section__header section__header--underline-left"></div>
-                    <h2>About us</h2>
+                    <h2 class="section__text">About us</h2>
                     <div class="section__header section__header--underline-right"></div>
                 </div>
                 <div class="about__box">
-                    <div class="about__box-text">
-                        <p class="p-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perspiciatis repellat quaerat
-                            consequuntur,
-                            mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum
-                            numquam,
-                            sint optio atque possimus corporis explicabo? mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae, laboriosam
-                            alias maxime, saepe magnam ipsa nostrum</p>
-                        <div class="about__box-img">
-                            <img src="img/gallery-img-1.jpg" alt="space in night" class="about__img">
+                    <div class="about__box-content">
+                        <div class="about__box-content about__box-content--text">
+                            <p class="p-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perspiciatis repellat quaerat
+                                consequuntur,
+                                mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum
+                                numquam,
+                                sint optio atque possimus corporis explicabo? mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae,
+                                laboriosam
+                                alias maxime, saepe magnam ipsa nostrum</p>
+                                <p class="p-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perspiciatis repellat quaerat
+                                    consequuntur,
+                                    mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum
+                                    numquam</p>
+                            <div class="about__box-img">
+                                <img src="img/gallery-img-1.jpg" alt="space in night" class="about__img">
+                            </div>
+                            <p class="p-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perspiciatis repellat quaerat
+                                consequuntur,
+                                mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum
+                                numquam,
+                                sint optio atque possimus corporis explicabo? Maxime perspiciatis repellat quaerat consequuntur, mollitia dolor
+                                corrupti
+                                magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum numquam, sint optio</p>
                         </div>
-                        <p class="p-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perspiciatis repellat quaerat
-                            consequuntur,
-                            mollitia dolor corrupti magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum
-                            numquam,
-                            sint optio atque possimus corporis explicabo? Maxime perspiciatis repellat quaerat consequuntur, mollitia dolor corrupti
-                            magnam veniam temporibus sunt. Molestiae, laboriosam alias maxime, saepe magnam ipsa nostrum numquam, sint optio</p>
-                        <h3 class="p-margin">Our partnerships </h3>
-
-
+                        <div class="gallery__box">
+                            <div class="gallery__box-img gallery__box-img--1">
+                            </div>
+                            <div class="gallery__box-img gallery__box-img--2">
+                            </div>
+                            <div class="gallery__box-img gallery__box-img--3">
+                            </div>
+                            <div class="gallery__box-img gallery__box-img--4">
+                            </div>
+                            <div class="gallery__box-img gallery__box-img--5">
+                            </div>
+                        </div>
                     </div>
-                    <div class="gallery__box">
-                        <div class="gallery__box-img">
-                            <img src="img/gallery-img-1.jpg" alt="space in night" class="gallery__img">
-                        </div>
-                        <div class="gallery__box-img">
-                            <img src="img/gallery-img-2.jpg" alt="space from earth" class="gallery__img">
-                        </div>
-                        <div class="gallery__box-img">
-                            <img src="img/gallery-img-3.jpg" alt="space photo" class="gallery__img">
-                        </div>
-                    </div>
-                    <ul class="about__list">
-                        <li title="show more" class="about__list-item"><i class="fa-brands fa-google"></i>Google</li>
-                        <li class="about__list-item"><i class="fa-brands fa-facebook"></i>Facebook</li>
-                        <li class="about__list-item"><i class="fa-brands fa-whatsapp"></i>Whatsapp</li>
-                        <li class="about__list-item"><i class="fa-brands fa-weibo"></i>Weibo</li>
-                        <li class="about__list-item"><i class="fa-brands fa-paypal"></i>PayPal</li>
-                        <li class="about__list-item"><i class="fa-brands fa-kickstarter"></i>Kickstarter</li>
-
-
-                    </ul>
                 </div>
+
+                <h3 class="p-margin about__list">Our partnerships </h3>
+                <ul class="about__list">
+                    <li class="about__list-item"><i class="fa-brands fa-google"></i>Google</li>
+                    <li class="about__list-item"><i class="fa-brands fa-facebook"></i>Facebook</li>
+                    <li class="about__list-item"><i class="fa-brands fa-whatsapp"></i>Whatsapp</li>
+                    <li class="about__list-item"><i class="fa-brands fa-weibo"></i>Weibo</li>
+                    <li class="about__list-item"><i class="fa-brands fa-paypal"></i>PayPal</li>
+                    <li class="about__list-item"><i class="fa-brands fa-kickstarter"></i>Kickstarter</li>
+
+
+                </ul>
 
             </div>
         </section>
-        <section class="process section-padding ">
+        <section class="process section-padding section-gsap ">
 
 
             <div class="section__header">
@@ -150,7 +158,8 @@
             </div>
 
         </section>
-        <section class="faq section-padding section-white">
+        section.
+        <section class="faq section-padding section-white section-gsap">
             <div class="wrapper">
                 <div class="section__header">
                     <div class="section__header section__header--underline-left"></div>
@@ -238,7 +247,7 @@
 
             </div>
         </section>
-        <section id="contact" class="contact section-padding">
+        <section id="contact" class="contact section-padding section-gsap">
             <div class="section__header">
                 <div class="section__header section__header--underline-left"></div>
                 <h2>Contact</h2>
@@ -247,20 +256,20 @@
             <div class="wrapper">
                 <div class="contact__box">
 
-                <form action="" class="contact__form">
-                    <div class="contact__form-labels">
-                        <label for="name" class="contact__form-label">Name and Surname</label>
-                        <input id="name" type="text" class="contact__form-input">
-                        <label for="email" class="contact__form-label">Email address:</label>
-                        <input id=" name" type="text" class="contact__form-input">
-                    </div>
-                    <label for="message" class="contact__form-label">Message:</label>
-                    <textarea id="message" class="contact__form-textarea"></textarea>
-                    <button type="submit" class="contact__form-btn universal__btn">Send</button>
-                </form>
-                <div id="map"></div>
+                    <form action="" class="contact__form">
+                        <div class="contact__form-labels">
+                            <label for="name" class="contact__form-label">Name and Surname</label>
+                            <input id="name" type="text" class="contact__form-input">
+                            <label for="email" class="contact__form-label">Email address:</label>
+                            <input id=" name" type="text" class="contact__form-input">
+                        </div>
+                        <label for="message" class="contact__form-label">Message:</label>
+                        <textarea id="message" class="contact__form-textarea"></textarea>
+                        <button type="submit" class="contact__form-btn universal__btn">Send</button>
+                    </form>
+                    <div id="map"></div>
 
-            </div>
+                </div>
             </div>
         </section>
 
@@ -269,28 +278,35 @@
 
     <footer class="footer">
         <div class="footer__box">
-            <div class="footer__box-logo"><a href="#">Egzo<span class="logo__gradient">Planets</span></a></div>
+            <div class="footer__box-logo">
+                <a href="#">Egzo<span class="logo__gradient">Planets</span></a>
+                <div class="footer__box-social">
+                    <a href="#" class="footer__box-link"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="footer__box-link"><i class="fab fa-instagram"></i></a>
+
+                </div>
+            </div>
             <div class="footer__box-navigation">
-                <nav class="footer__box-navigation navigation__footer">
-                    <div class="navigation__items">
-                        <a class="navigation__item" href="#about">About us</a>
-                        <a class="navigation__item" href="#planets">Planets</a>
-                        <a class="navigation__item" href="#plans">Our plans</a>
-                        <a class="navigation__item" href="#contact">Contact Us</a>
-                    </div>
-                </nav>
+                <div class="navigation__items">
+                    <a class="navigation__item" href="#about">About us</a>
+                    <a class="navigation__item" href="#planets">Planets</a>
+                    <a class="navigation__item" href="#plans">Our plans</a>
+                    <a class="navigation__item" href="#contact">Contact Us</a>
+                </div>
             </div>
 
-<p class="footer__copyright">Designed & developed by <b>Paweł Bilski</b> | 2022</p>
+            <p class="footer__copyright">Designed & developed by <b>Paweł Bilski</b> | 2022</p>
         </div>
 
 
     </footer>
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-    crossorigin=""></script>
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

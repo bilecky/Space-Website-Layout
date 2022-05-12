@@ -2,7 +2,7 @@
 	position: relative;
 	background-image: $process-bgc,
 		url(/img/hero-process-medium.jpg);
-	clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+	clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
 
 	background-size: cover;
 	overflow: hidden;
@@ -21,7 +21,7 @@
 	&__option {
 		position: relative;
 		margin: 3rem 0;
-		padding: 2rem 4rem;
+		padding: 2rem 3rem;
 		background: $process-card-bgc;
 		height: 30rem;
 		display: flex;
@@ -36,8 +36,11 @@
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 			rgba(0, 0, 0, 0.22) 0px 15px 12px;
 		transition: transform 0.3s;
+		h3 {
+			font-size: 2.3rem;
+		}
 		&:last-of-type {
-			margin-bottom: 6rem;
+			margin-bottom: 10rem;
 		}
 		&:hover {
 			transform: scale(0.9);

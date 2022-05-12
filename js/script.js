@@ -24,7 +24,7 @@ accordion.forEach(item => {
 		console.log(item);
 	})
 })
-
+// contact map leaflet
 var map = L.map('map').setView([21.24903, -157.95486], 7);
 
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=CMcrJPUIbvHEfLRgwdus',{
@@ -35,3 +35,15 @@ L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=CMcrJPUIb
 	crossOrigin: true
   }).addTo(map);
 
+  //GSAP OBSERVER
+
+gsap.registerPlugin(ScrollTrigger);
+
+const sections = document.querySelectorAll('.section-gsap');
+
+// sections.forEach(section => {
+//   gsap.fromTo(section.children, {y: '+=100', opacity: 0}, {y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'easeInOut', scrollTrigger: {
+//   trigger: section,
+//   start: 'top 50%',
+// }});  
+// });

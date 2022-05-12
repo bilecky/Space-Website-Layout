@@ -24,6 +24,11 @@
 		margin-bottom: 0;
 	}
 }
+
+.section__text {
+	font-size: 2.4rem;
+}
+
 .section__header {
 	margin-top: 7rem;
 	color: $secondary-color;
@@ -53,7 +58,7 @@
 .universal__btn {
 	margin-top: 2.5rem;
 	margin-bottom: 2.5rem;
-
+	position: relative;
 	font-size: 1.4rem;
 	background: $primary-color;
 	color: $secondary-color;
@@ -64,9 +69,12 @@
 	letter-spacing: 0.2rem;
 	font-weight: 500;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-	transform: translateY(0);
-	transition: transform 0.3s;
+	transition: all 0.5s;
 	cursor: pointer;
+	&:hover {
+		background-color: $secondary-color;
+		color: $primary-color;
+	}
 }
 
 .accordion {
@@ -112,7 +120,7 @@
 		}
 		&-content {
 			position: relative;
-			background-color: white;
+			background-color: $body-color;
 			max-height: 0px;
 			overflow: hidden;
 			transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
