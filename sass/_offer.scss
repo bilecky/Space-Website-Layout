@@ -1,0 +1,62 @@
+.offer {
+	&__btn {
+		@include btn_style;
+		border-radius: 10px;
+		color: white;
+		border: none;
+		box-shadow: $process-card-bgc 0px 3px 7px -3px;
+		margin: 2rem 0;
+		width: 40%;
+		@include center-btn;
+		padding: 1.5rem 0.2rem;
+		font-size: 1.8rem;
+		letter-spacing: 2;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	.section__header {
+		margin-top: 0;
+		& div {
+			margin-top: 0;
+		}
+	}
+	&__box {
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+			rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+		padding: 5rem 2rem;
+		margin: 3rem 0;
+		h3 {
+			font-size: 2.5rem;
+            color: $contact-form-label-color;
+		}
+
+		i {
+			width: 100%;
+			font-size: 7.5rem;
+			margin-bottom: 3rem;
+			color: $secondary-color;
+		}
+		li {
+			display: flex;
+			vertical-align: middle;
+			font-size: 1.8rem;
+			margin-bottom: 1.5rem;
+
+			list-style: none;
+			span {
+				margin-right: 0.5rem;
+				color: $secondary-color;
+			}
+		}
+		&-list-wrapper {
+			display: flex;
+			justify-content: center;
+		}
+		&-header {
+			margin-bottom: 2rem;
+			font-size: 2.6rem;
+		}
+	}
+}

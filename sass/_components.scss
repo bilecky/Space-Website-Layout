@@ -3,7 +3,6 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 5rem;
-	font-size: 1.5rem;
 	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
@@ -24,6 +23,12 @@
 		margin-bottom: 0;
 	}
 }
+h2{ 
+	font-weight: 600;
+font-family: 'Montserrat';
+letter-spacing: 0.8;
+font-size: 2.8rem;
+}
 
 .section__text {
 	font-size: 2.4rem;
@@ -31,7 +36,7 @@
 
 .section__header {
 	margin-top: 7rem;
-	color: $secondary-color;
+	color: $third-color;
 	& div {
 		background-color: $secondary-color;
 		margin-top: 0;

@@ -39,6 +39,11 @@
 }
 
 @media (min-width: 768px) {
+	.offer {
+		&__btn {
+			width: 25%;
+		}
+	}
 	.section__text {
 		font-size: 2.8rem;
 	}
@@ -53,12 +58,40 @@
 			}
 		}
 	}
+	.offer {
+		&__box {
+			width: 40%;
+		}
+		&__boxes {
+			display: flex;
+			justify-content: space-around;
+			padding: 0 auto;
+			flex-grow: 1;
+		}
+		&__btn {
+			width: 15%;
+		}
+	}
 }
 
 @media (min-width: 990px) {
-	.section__text {
-		font-size: 2.8rem;
+
+	h2 {
+		font-size: 4.5rem;
+		font-weight: 500;
 	}
+
+	.section__header {
+		&--underline-left {
+			width: 3rem;
+			height: 4px;
+		}
+		&--underline-right {
+			width: 3rem;
+			height: 4px;
+		}
+	}
+
 	#map {
 		height: 35rem;
 		width: 50%;
@@ -174,6 +207,9 @@
 				flex-direction: column;
 				padding: 1.6rem;
 			}
+		}
+		&__box {
+			margin-top: 10rem;
 		}
 		&__box-img {
 			display: none;
