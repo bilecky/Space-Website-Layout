@@ -6,11 +6,11 @@
 		border: none;
 		box-shadow: $process-card-bgc 0px 3px 7px -3px;
 		margin: 2rem 0;
-		width: 40%;
+		width: 50%;
 		@include center-btn;
 		padding: 1.5rem 0.2rem;
 		font-size: 1.8rem;
-		letter-spacing: 2;
+		letter-spacing: 1.5px;
 		text-transform: uppercase;
 		cursor: pointer;
 	}
@@ -30,6 +30,7 @@
 		h3 {
 			font-size: 2.5rem;
             color: $contact-form-label-color;
+            letter-spacing: 2px;
 		}
 
 		i {

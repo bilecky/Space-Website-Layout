@@ -69,12 +69,17 @@
 			flex-grow: 1;
 		}
 		&__btn {
-			width: 15%;
+			width: 20%;
 		}
 	}
 }
 
 @media (min-width: 990px) {
+	.offer {
+		&__btn {
+			width: 13%;
+		}
+	}
 
 	h2 {
 		font-size: 4.5rem;
