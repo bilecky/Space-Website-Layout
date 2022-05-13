@@ -6,6 +6,7 @@ const sectionsGSAP = document.querySelectorAll('.section-gsap')
 const svg = document.querySelector('svg')
 const allSections = document.querySelectorAll('.section')
 const header = document.querySelector('header')
+const btn_up = document.querySelector('.btn__up')
 
 //nav handler
 const navHandler = () => {
@@ -25,22 +26,26 @@ AOS.init()
 
 const hamburgerColorHandler = () => {
 	const currentSection = window.scrollY
-	console.log(currentSection)
+	console.log(window.scrollY)
 	allSections.forEach(section => {
 		switch (true) {
 			case section.classList.contains('section-white') &&
 				section.offsetTop <= currentSection + 130:
 				svg.style.stroke = '#7800b4'
-
 				break
 			case !section.classList.contains('section-white') &&
 				section.offsetTop <= currentSection:
 				svg.style.stroke = 'white'
-				console.log('gowno')
-
 				break
 			case hamburgerBtn.classList.contains('active'):
 				svg.style.stroke = 'white'
+				break
+			case currentSection > 360:
+				btn_up.classList.add('active')
+				break
+			case currentSection < 360:
+				btn_up.classList.remove('active')
+
 				break
 		}
 	})
@@ -48,8 +53,9 @@ const hamburgerColorHandler = () => {
 
 window.addEventListener('scroll', hamburgerColorHandler)
 hamburgerBtn.addEventListener('click', hamburgerColorHandler)
-
-
+btn_up.addEventListener('click', () => {
+	window.scroll({ top: 0, behavior: 'smooth' })
+})
 //accordion
 
 accordion.forEach(item => {

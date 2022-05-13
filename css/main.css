@@ -12,8 +12,9 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: #843ad9ea;
   letter-spacing: 1.5px;
+  margin-top: 7rem;
+  color: #7800b4;
 }
 
 .section__header--underline-left {
@@ -32,6 +33,11 @@
   margin-bottom: 0;
 }
 
+.section__header div {
+  background-color: #7800b4;
+  margin-top: 0;
+}
+
 h2 {
   font-weight: 600;
   font-family: 'Montserrat';
@@ -41,16 +47,6 @@ h2 {
 
 .section__text {
   font-size: 2.4rem;
-}
-
-.section__header {
-  margin-top: 7rem;
-  color: #7800b4;
-}
-
-.section__header div {
-  background-color: #843ad9ea;
-  margin-top: 0;
 }
 
 .section-padding {
@@ -160,6 +156,48 @@ h2 {
 
 .accordion__box-content p {
   padding: 1rem;
+}
+
+.btn__up {
+  opacity: 0;
+  border: none;
+  background-color: #edf2f4;
+  position: fixed;
+  width: 6rem;
+  height: 6rem;
+  bottom: 2rem;
+  right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: opacity 0.6s, scale 0.6s;
+  transition: opacity 0.6s, scale 0.6s;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn__up:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.btn__up.active {
+  opacity: 0.8;
+  border: none;
+}
+
+.btn__up i {
+  font-size: 2.5rem;
+  color: #7800b4;
 }
 
 .navigation {
@@ -751,11 +789,14 @@ path:nth-child(6) {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
 }
 
 .footer .navigation__items a {
   font-size: 2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -838,13 +879,13 @@ path:nth-child(6) {
             flex-grow: 1;
   }
   .offer__btn {
-    width: 20%;
+    width: 23%;
   }
 }
 
 @media (min-width: 990px) {
   .offer__btn {
-    width: 13%;
+    width: 15%;
   }
   h2 {
     font-size: 4.5rem;

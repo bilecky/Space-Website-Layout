@@ -54,10 +54,11 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+		align-items: space-around;
 
 		a {
 			font-size: 2rem;
-			padding: 0.5rem;
+			padding: 0.5rem 1rem;
 			align-self: center;
 			margin-bottom: 1rem;
 			font-family: 'Montserrat';
