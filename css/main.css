@@ -116,7 +116,7 @@ h2 {
 }
 
 .active .accordion__box-label {
-  background-color: lighter(#30144fea, 30%);
+  background-color: lighter(rgba(47, 19, 78, 0.839), 30%);
 }
 
 .active .accordion__box-label::before {
@@ -375,7 +375,7 @@ h2 {
 .about__list-item i {
   margin-right: 1rem;
   font-size: 1.6rem;
-  color: #30144fea;
+  color: rgba(47, 19, 78, 0.839);
 }
 
 .gallery__box {
@@ -721,7 +721,7 @@ path:nth-child(6) {
   width: 96%;
   height: 100%;
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 0rem;
   z-index: 1;
 }
 
@@ -747,13 +747,13 @@ path:nth-child(6) {
 }
 
 .swiper-slide:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
 .swiper-slide-img {
   width: 100%;
-  height: 12vh;
+  height: 10vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -798,7 +798,7 @@ path:nth-child(6) {
 
 .swiper-slide__details-job {
   font-weight: 300;
-  color: #30144fea;
+  color: rgba(47, 19, 78, 0.839);
   margin-bottom: 2.5rem;
 }
 
@@ -1293,7 +1293,7 @@ body {
 }
 
 .bg-video__shadow {
-  background: #30144fea;
+  background: rgba(47, 19, 78, 0.839);
   z-index: 1;
   width: 100%;
   height: 100%;

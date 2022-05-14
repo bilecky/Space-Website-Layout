@@ -104,7 +104,7 @@ sectionsGSAP.forEach(section => {
 			ease: 'easeInOut',
 			scrollTrigger: {
 				trigger: section,
-				start: 'top 50%',
+				start: 'top 60%',
 			},
 		}
 	)
