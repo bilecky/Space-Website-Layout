@@ -1,6 +1,6 @@
 .footer {
 	&__box {
-		background-image: $process-bgc, url(./img/footer-small.jpg);
+		background-image: $process-bgc, url('/img/footer-small.jpg');
 		clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
 		background-size: cover;
 		overflow: hidden;
@@ -63,7 +63,6 @@
 			margin-bottom: 1rem;
 			font-family: 'Montserrat';
 			display: inline-block;
-
 		}
 	}
 	&__copyright {
