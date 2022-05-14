@@ -385,8 +385,8 @@ h2 {
 
 .process {
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(201, 61, 205, 0.711642)), color-stop(0%, rgba(72, 10, 110, 0.808477))), url("/img/hero-process-medium.jpg");
-  background-image: linear-gradient(90deg, rgba(201, 61, 205, 0.711642) 0%, rgba(72, 10, 110, 0.808477) 0%), url("/img/hero-process-medium.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(201, 61, 205, 0.711642)), color-stop(0%, rgba(72, 10, 110, 0.808477))), url("../img/hero-process-medium.jpg");
+  background-image: linear-gradient(90deg, rgba(201, 61, 205, 0.711642) 0%, rgba(72, 10, 110, 0.808477) 0%), url("../img/hero-process-medium.jpg");
   -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
           clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
   background-size: cover;
@@ -1191,7 +1191,7 @@ path:nth-child(6) {
     transition: transform 0.4s, scale 0.4s, -webkit-transform 0.4s;
   }
   .gallery__box-img--1 {
-    background-image: url("/img/planet-1.jpg");
+    background-image: url("../img/planet-1.jpg");
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -1201,7 +1201,7 @@ path:nth-child(6) {
     bottom: 4rem;
   }
   .gallery__box-img--2 {
-    background-image: url("/img/gallery-img-2.jpg");
+    background-image: url("../img/gallery-img-2.jpg");
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -1211,7 +1211,7 @@ path:nth-child(6) {
     z-index: 3;
   }
   .gallery__box-img--3 {
-    background-image: url("/img/gallery-img-3.jpg");
+    background-image: url("../img/gallery-img-3.jpg");
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
@@ -1223,7 +1223,7 @@ path:nth-child(6) {
     z-index: 4;
   }
   .gallery__box-img--4 {
-    background-image: url("/img/gallery-img-4.jpg");
+    background-image: url("../img/gallery-img-4.jpg");
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
@@ -1234,7 +1234,7 @@ path:nth-child(6) {
     top: -1rem;
   }
   .gallery__box-img--5 {
-    background-image: url("/img/gallery-img-5.jpg");
+    background-image: url("../img/gallery-img-5.jpg");
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
