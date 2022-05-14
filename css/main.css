@@ -1256,8 +1256,6 @@ path:nth-child(6) {
   .gallery__box:hover .gallery__box-img:not(:hover) {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
-    -webkit-font-language-override: sad;
-            font-language-override: sad;
   }
   .accordion__box-label {
     font-size: 2rem;
