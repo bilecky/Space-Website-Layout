@@ -4,7 +4,7 @@ $main-gradient: linear-gradient(
 	rgb(75, 11, 237) 27%,
 	rgb(140, 0, 255) 100%
 );
-$mobile-nav-bgc: linear-gradient(to bottom right, #511F91, #7F33A0);
+$mobile-nav-bgc: linear-gradient(to bottom right, #511f91, #7f33a0);
 $background-shadow: #30144fea;
 $process-card-bgc: rgb(38, 38, 38);
 $process-bgc: linear-gradient(
@@ -14,13 +14,17 @@ $process-bgc: linear-gradient(
 );
 $primary-color: #d9d9d9;
 $third-color: #7800b4;
-$secondary-color: #843ad9ea;
+$secondary-color: rgba(132, 58, 217, 0.918);
 $contact-bgc-color: #e6e6e6ea;
 $contact-form-label-color: #212121ea;
 $body-color: #edf2f4;
-$btn-gradient-bgc:  #663dff;
-$btn-gradient-img: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
-
+$btn-gradient-bgc: #663dff;
+$btn-gradient-img: linear-gradient(
+	319deg,
+	#663dff 0%,
+	#aa00ff 37%,
+	#cc4499 100%
+);
 
 @import './mixins.scss';
 @import './components';
@@ -32,6 +36,7 @@ $btn-gradient-img: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%
 @import './hamburger-btn';
 @import './offer';
 @import './faq';
+@import './crew';
 @import './footer';
 
 @import './media-queries';

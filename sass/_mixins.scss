@@ -1,8 +1,8 @@
-@mixin center_btn {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
+// @mixin center_btn {
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+// }
 
 @mixin btn_style {
 	background-color: $btn-gradient-bgc;

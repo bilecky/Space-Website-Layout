@@ -77,7 +77,7 @@
 @media (min-width: 990px) {
 	.offer {
 		&__btn {
-			width: 15%;
+			width: 17%;
 		}
 	}
 
@@ -300,6 +300,13 @@
 			}
 			&:hover &-img:not(:hover) {
 				transform: scale(0.9);
+			}
+		}
+	}
+	.accordion {
+		&__box {
+			&-label {
+				font-size: 2rem;
 			}
 		}
 	}

@@ -7,7 +7,7 @@ const svg = document.querySelector('svg')
 const allSections = document.querySelectorAll('.section')
 const header = document.querySelector('header')
 const btn_up = document.querySelector('.btn__up')
-
+const footer = document.querySelector('footer')
 //nav handler
 const navHandler = () => {
 	navigation.classList.toggle('navigation--toggle-nav')
@@ -24,9 +24,19 @@ AOS.init()
 
 //hamburger color changer when section is white
 
-const hamburgerColorHandler = () => {
+const hamburgerHandler = () => {
+	const websiteHeight = document.body.scrollHeight
+
+	const actualScrollValue = window.innerHeight + window.scrollY
+
+	if (
+		actualScrollValue == websiteHeight ||
+		websiteHeight - 500 < actualScrollValue
+	) {
+		btn_up.classList.remove('active')
+	}
+
 	const currentSection = window.scrollY
-	console.log(window.scrollY)
 	allSections.forEach(section => {
 		switch (true) {
 			case section.classList.contains('section-white') &&
@@ -40,19 +50,18 @@ const hamburgerColorHandler = () => {
 			case hamburgerBtn.classList.contains('active'):
 				svg.style.stroke = 'white'
 				break
+
 			case currentSection > 360:
 				btn_up.classList.add('active')
 				break
 			case currentSection < 360:
 				btn_up.classList.remove('active')
-
-				break
 		}
 	})
 }
 
-window.addEventListener('scroll', hamburgerColorHandler)
-hamburgerBtn.addEventListener('click', hamburgerColorHandler)
+window.addEventListener('scroll', hamburgerHandler)
+hamburgerBtn.addEventListener('click', hamburgerHandler)
 btn_up.addEventListener('click', () => {
 	window.scroll({ top: 0, behavior: 'smooth' })
 })
@@ -100,3 +109,71 @@ sectionsGSAP.forEach(section => {
 		}
 	)
 })
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+	spaceBetween: 70,
+	slidesPerView: 1,
+	autoplay: {
+		delay: 3500,
+		disableOnInteraction: false,
+		pauseOnMouseEnter: true,
+	},
+
+	// If we need pagination
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		630: {
+			slidesPerView: 2,
+			spaceBetween: 70,
+		},
+	},
+
+	// And if we need scrollbar
+})
+
+// var swiper = new Swiper('.swiper', {
+// 	slidesPerView: 3,
+// 	spaceBetween: 30,
+// 	centeredSlides: true,
+// 	effect: 'flip',
+// 	autoplay: {
+// 	  delay: 2500,
+// 	  disableOnInteraction: false,
+// 	},
+
+// 	navigation: {
+// 	  nextEl: '.swiper-button-next',
+// 	  prevEl: '.swiper-button-prev',
+// 	},
+// 	// Responsive breakpoints
+// 	breakpoints: {
+// 		// when window width is >= 320px
+// 		550: {
+// 		  slidesPerView: 1,
+// 		  spaceBetween: 20
+// 		},
+// 		// when window width is >= 480px
+// 		480: {
+// 		  slidesPerView: 3,
+// 		  spaceBetween: 30
+// 		},
+// 		// when window width is >= 640px
+// 		640: {
+// 		  slidesPerView: 4,
+// 		  spaceBetween: 40
+// 		}
+// 	  }
+//   });

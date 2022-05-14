@@ -1,18 +1,27 @@
 .offer {
+
+	height: auto;
+	&__boxes {
+		height: auto;
+	}
 	&__btn {
+		&-box {
+			display: flex;
+			justify-content: center;
+		}
 		@include btn_style;
 		border-radius: 10px;
 		color: white;
 		border: none;
 		box-shadow: $process-card-bgc 0px 3px 7px -3px;
-		margin: 2rem 0;
 		width: 50%;
-		@include center-btn;
+		// @include center-btn;
 		padding: 1.5rem 0.2rem;
 		font-size: 1.8rem;
 		letter-spacing: 1.5px;
 		text-transform: uppercase;
 		cursor: pointer;
+		margin-bottom: 0rem;
 	}
 	.section__header {
 		margin-top: 0;
@@ -26,11 +35,11 @@
 		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 			rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 		padding: 5rem 2rem;
-		margin: 3rem 0;
+		margin: 3rem 0 5rem 0;
 		h3 {
 			font-size: 2.5rem;
-            color: $contact-form-label-color;
-            letter-spacing: 2px;
+			color: $contact-form-label-color;
+			letter-spacing: 2px;
 		}
 
 		i {
@@ -44,7 +53,7 @@
 			vertical-align: middle;
 			font-size: 1.8rem;
 			margin-bottom: 1.5rem;
-align-items: center;
+			align-items: center;
 			list-style: none;
 			span {
 				margin-right: 0.5rem;
