@@ -819,8 +819,8 @@ path:nth-child(6) {
 }
 
 .footer__box {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(201, 61, 205, 0.711642)), color-stop(0%, rgba(72, 10, 110, 0.808477))), url("/img/footer-small.jpg");
-  background-image: linear-gradient(90deg, rgba(201, 61, 205, 0.711642) 0%, rgba(72, 10, 110, 0.808477) 0%), url("/img/footer-small.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(201, 61, 205, 0.711642)), color-stop(0%, rgba(72, 10, 110, 0.808477))), url("img/footer-small.jpg");
+  background-image: linear-gradient(90deg, rgba(201, 61, 205, 0.711642) 0%, rgba(72, 10, 110, 0.808477) 0%), url("img/footer-small.jpg");
   -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
           clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
   background-size: cover;
