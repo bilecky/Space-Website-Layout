@@ -116,7 +116,7 @@ h2 {
 }
 
 .active .accordion__box-label {
-  background-color: lighter(rgba(47, 19, 78, 0.839), 30%);
+  background-color: lighter(rgba(47, 19, 78, 0.89), 30%);
 }
 
 .active .accordion__box-label::before {
@@ -375,7 +375,7 @@ h2 {
 .about__list-item i {
   margin-right: 1rem;
   font-size: 1.6rem;
-  color: rgba(47, 19, 78, 0.839);
+  color: rgba(47, 19, 78, 0.89);
 }
 
 .gallery__box {
@@ -796,7 +796,7 @@ path:nth-child(6) {
 .swiper-slide__details-job {
   font-weight: 300;
   letter-spacing: 1px;
-  color: rgba(47, 19, 78, 0.839);
+  color: rgba(47, 19, 78, 0.89);
   margin-bottom: 2.5rem;
 }
 
@@ -1189,7 +1189,7 @@ path:nth-child(6) {
     transition: transform 0.4s, scale 0.4s, -webkit-transform 0.4s;
   }
   .gallery__box-img--1 {
-    background-image: url("../img/planet-1.jpg");
+    background-image: url("../img/planet-1.webp");
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -1199,7 +1199,7 @@ path:nth-child(6) {
     bottom: 4rem;
   }
   .gallery__box-img--2 {
-    background-image: url("../img/gallery-img-2.jpg");
+    background-image: url("../img/gallery-img-2.webp");
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -1209,7 +1209,7 @@ path:nth-child(6) {
     z-index: 3;
   }
   .gallery__box-img--3 {
-    background-image: url("../img/gallery-img-3.jpg");
+    background-image: url("../img/gallery-img-3.webp");
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
@@ -1221,7 +1221,7 @@ path:nth-child(6) {
     z-index: 4;
   }
   .gallery__box-img--4 {
-    background-image: url("../img/gallery-img-4.jpg");
+    background-image: url("../img/gallery-img-4.webp");
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
@@ -1232,7 +1232,7 @@ path:nth-child(6) {
     top: -1rem;
   }
   .gallery__box-img--5 {
-    background-image: url("../img/gallery-img-5.jpg");
+    background-image: url("../img/gallery-img-5.webp");
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -1291,7 +1291,7 @@ body {
 }
 
 .bg-video__shadow {
-  background: rgba(47, 19, 78, 0.839);
+  background: rgba(47, 19, 78, 0.89);
   z-index: 1;
   width: 100%;
   height: 100%;

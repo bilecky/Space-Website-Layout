@@ -70,7 +70,6 @@ btn_up.addEventListener('click', () => {
 accordion.forEach(item => {
 	item.addEventListener('click', () => {
 		item.classList.toggle('active')
-		console.log(item)
 	})
 })
 // contact map leaflet
@@ -116,8 +115,10 @@ const swiper = new Swiper('.swiper', {
 	loop: true,
 	spaceBetween: 70,
 	slidesPerView: 1,
+	speed: 1200,
+
 	autoplay: {
-		delay: 3500,
+		delay: 4500,
 		disableOnInteraction: false,
 		pauseOnMouseEnter: true,
 	},
@@ -134,46 +135,9 @@ const swiper = new Swiper('.swiper', {
 		clickable: true,
 	},
 	breakpoints: {
-		// when window width is >= 320px
 		800: {
 			slidesPerView: 2,
 			spaceBetween: 70,
 		},
 	},
-
-	// And if we need scrollbar
 })
-
-// var swiper = new Swiper('.swiper', {
-// 	slidesPerView: 3,
-// 	spaceBetween: 30,
-// 	centeredSlides: true,
-// 	effect: 'flip',
-// 	autoplay: {
-// 	  delay: 2500,
-// 	  disableOnInteraction: false,
-// 	},
-
-// 	navigation: {
-// 	  nextEl: '.swiper-button-next',
-// 	  prevEl: '.swiper-button-prev',
-// 	},
-// 	// Responsive breakpoints
-// 	breakpoints: {
-// 		// when window width is >= 320px
-// 		550: {
-// 		  slidesPerView: 1,
-// 		  spaceBetween: 20
-// 		},
-// 		// when window width is >= 480px
-// 		480: {
-// 		  slidesPerView: 3,
-// 		  spaceBetween: 30
-// 		},
-// 		// when window width is >= 640px
-// 		640: {
-// 		  slidesPerView: 4,
-// 		  spaceBetween: 40
-// 		}
-// 	  }
-//   });
