@@ -39,15 +39,15 @@ const hamburgerHandler = () => {
 	const currentSection = window.scrollY
 	allSections.forEach(section => {
 		switch (true) {
+			case hamburgerBtn.classList.contains('active'):
+				svg.style.stroke = 'white'
+				break
 			case section.classList.contains('section-white') &&
 				section.offsetTop <= currentSection + 130:
 				svg.style.stroke = '#7800b4'
 				break
 			case !section.classList.contains('section-white') &&
 				section.offsetTop <= currentSection:
-				svg.style.stroke = 'white'
-				break
-			case hamburgerBtn.classList.contains('active'):
 				svg.style.stroke = 'white'
 				break
 
@@ -118,7 +118,7 @@ const swiper = new Swiper('.swiper', {
 	speed: 1200,
 
 	autoplay: {
-		delay: 4500,
+		delay: 3500,
 		disableOnInteraction: false,
 		pauseOnMouseEnter: true,
 	},
