@@ -15,8 +15,7 @@ Check out the live version of the project [here](https://bilecky.github.io/Space
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-
+- 
 ## Technologies Used
 
 The project is built using the following technologies:
@@ -50,11 +49,3 @@ After completing the installation steps, open the project in your preferred web 
 ## Contributing
 
 Contributions to the project are welcome. If you have any suggestions or improvements, feel free to submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
-
-The MIT License is a permissive open-source license that allows you to freely use, modify, and distribute the software. It grants you the permission to use the code for personal or commercial purposes without any restrictions. However, it comes with no warranty or liability, and the original author or contributor is not liable for any damages or issues arising from the use of the software.
-
-Feel free to customize the license text according to your specific project requirements and include it in your project repository.
