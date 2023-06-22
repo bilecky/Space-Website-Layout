@@ -1,6 +1,6 @@
 # Space Website Layout
 
-![image](https://github.com/bilecky/Space-Website-Layout/assets/51762310/5f597e99-bd86-474b-8d16-ac3cfefc700e)
+![image](https://github.com/bilecky/Space-Website-Layout/assets/51762310/704cfd37-42c7-4590-add3-ebc12a5cfe9f)
 
 This is a simple and visually appealing website layout inspired by space and the universe.
 
@@ -15,7 +15,7 @@ Check out the live version of the project [here](https://bilecky.github.io/Space
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- 
+  
 ## Technologies Used
 
 The project is built using the following technologies:
