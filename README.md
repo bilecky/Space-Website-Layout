@@ -38,7 +38,7 @@ The project is built using the following technologies:
 
 To run this project on your local machine, follow these steps:
 
-1. Clone the repository: `git clone[ https://github.com/username/repository.git](https://github.com/bilecky/Space-Website-Layout.git)`
+1. Clone the repository: `git clone https://github.com/bilecky/Space-Website-Layout.git`
 2. Navigate to the project folder in your code editor.
 3. Install dependencies by running `npm install`.
 4. Start the development server by running `npm start`.
