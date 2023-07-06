@@ -32,6 +32,7 @@ The project is built using the following technologies:
 - 'Arrow-up' feature that appears after scrolling and disappears at the top and bottom of the page
 - Interesting hover effect on the Swiper component created using SASS
 - Smooth animations and transitions using the AOS library
+- WEBP images and WEBM videos in order to increase the speed of the site and to meet the latest standards
 
 ## Installation
 
